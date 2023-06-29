@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom --setupFiles=./src/components/__test__/config/setup.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
