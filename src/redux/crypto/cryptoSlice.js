@@ -24,11 +24,9 @@ export const cryptoSlice = createSlice({
   reducers: {
     setActiveCoin: (state, { payload }) => {
       state.active = payload;
-      console.log(payload);
     },
     setTitle: (state, { payload }) => {
       state.title = payload;
-      console.log(payload);
     },
   },
   extraReducers: (builder) => {
