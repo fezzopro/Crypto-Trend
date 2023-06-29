@@ -9,6 +9,7 @@ const initialState = {
   isLoading: true,
   error: '',
   message: '',
+  active: [],
 };
 
 export const fetchCrypto = createAsyncThunk(('crypto/fetchCrypto'), () => (
@@ -20,7 +21,16 @@ export const fetchCrypto = createAsyncThunk(('crypto/fetchCrypto'), () => (
 export const cryptoSlice = createSlice({
   name: 'crypto',
   initialState,
-  reduces: {},
+  reducers: {
+    setActiveCoin: (state, { payload }) => {
+      state.active = payload;
+      console.log(payload);
+    },
+    setTitle: (state, { payload }) => {
+      state.title = payload;
+      console.log(payload);
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchCrypto.pending, (state) => {
@@ -38,4 +48,5 @@ export const cryptoSlice = createSlice({
   },
 });
 
+export const { setTitle, setActiveCoin } = cryptoSlice.actions;
 export default cryptoSlice.reducer;
