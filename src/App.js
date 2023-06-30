@@ -5,6 +5,7 @@ import { fetchCrypto } from './redux/crypto/cryptoSlice';
 import Nav from './components/Navigation/Navigation';
 import Details from './components/Details/Details';
 import Home from './components/Home/Home';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="details" element={<Details />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>
