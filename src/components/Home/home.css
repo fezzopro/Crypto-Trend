@@ -60,6 +60,25 @@
   padding-top: 5%;
 }
 
+@media only screen and (max-width: 600px) {
+  .crypto-list li {
+    min-width: 90%;
+    background-color: #d14378;
+    padding: 2% 1%;
+  }
+
+  .content ul {
+    padding-inline-start: 0;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .letf-stats > span,
+  .right-stats > span {
+    flex-wrap: wrap;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
