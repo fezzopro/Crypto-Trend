@@ -1,0 +1,35 @@
+.top-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 3%;
+}
+
+.details-crypto-icon img {
+  width: 4rem;
+}
+
+.crypto-intro {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.crypto-analytics {
+  display: flex;
+  padding: 2% 3%;
+  flex-wrap: wrap;
+}
+
+.crypto-analytics > div {
+  width: 44%;
+  padding: 2%;
+  background-color: #d14378;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.crypto-analytics > div:nth-child(4n),
+.crypto-analytics > div:nth-child(4n + 1) {
+  background-color: #dd4781;
+}
