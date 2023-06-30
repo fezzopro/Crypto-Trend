@@ -5,7 +5,7 @@
 
 .nav {
   display: flex;
-  gap: 40%;
+  justify-content: space-between;
   padding: 1rem 0;
   background: #d14378;
 }
@@ -19,4 +19,12 @@
 
 .back-button {
   width: 30px;
+}
+
+.nav-icon {
+  padding-right: 1rem;
+}
+
+.nav-icon img {
+  height: 1.2rem;
 }
