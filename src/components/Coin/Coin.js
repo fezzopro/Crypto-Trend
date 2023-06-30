@@ -14,7 +14,7 @@ const Coin = ({ coin }) => {
   };
   return (
     <li key={uuid}>
-      <Link to="details" state={uuid}>
+      <Link to={`details?coin=${uuid}`} state={uuid}>
         <div className="coin">
           <span style={style}>
             <span>{`Name: ${name}(${symbol})`}</span>
