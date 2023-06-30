@@ -54,6 +54,7 @@
 
 - **[Initialize React app]** 
 - **[React Components]**
+- **[React API Calls]**
 - **[React Components Unit Tests]**
 
 
