@@ -2,8 +2,7 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import createMockStore from 'redux-mock-store';
-import { CoinsList } from '../Home/Home';
-import Home from '../Home/Home';
+import Home, { CoinsList } from '../Home/Home';
 
 describe('Home component suit cases', () => {
   const initialState = {
