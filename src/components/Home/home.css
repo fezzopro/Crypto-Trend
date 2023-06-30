@@ -52,6 +52,14 @@
   animation: rotate 1s infinite;
 }
 
+.error {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-top: 5%;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

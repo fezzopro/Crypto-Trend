@@ -20,15 +20,15 @@ const Home = () => {
   return (
 
     <div className="content">
-      {error !== '' ? <div className="error"><span>{error}</span></div> : null}
-      {isLoading ? <div className="loading"><span /></div>
-        : (
-          <div>
-            <div className="all-stats">ALL STATS</div>
-            <Stats stats={stats} />
-            <CoinsList coins={cryptos} />
-          </div>
-        )}
+      {error !== '' ? (<div className="error"><span>{error}</span></div>) // eslint-disable-line
+        : isLoading ? (<div className="loading"><span /></div>)
+          : (
+            <div>
+              <div className="all-stats">ALL STATS</div>
+              <Stats stats={stats} />
+              <CoinsList coins={cryptos} />
+            </div>
+          )}
     </div>
   );
 };
