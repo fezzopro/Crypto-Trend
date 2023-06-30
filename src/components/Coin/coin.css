@@ -1,0 +1,9 @@
+.coin {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin > span {
+  display: flex;
+  flex-direction: column;
+}
