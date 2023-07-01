@@ -43,10 +43,10 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">React</a></li>
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
+    <li><a href="https://react.dev/" target="_blank">React</a></li>
+    <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
+    <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
+    <li><a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
   </ul>
 </details>
 
@@ -166,6 +166,7 @@ If you like this project please give it a star ⭐️
 
 
 I would like to thank Microverse Team & Students
+I would like to thank  [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for the original design under [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

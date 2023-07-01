@@ -21,3 +21,17 @@
   display: flex;
   gap: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .letf-stats {
+    display: none;
+  }
+
+  .stats-section {
+    padding-top: 3%;
+  }
+
+  .right-stats > span {
+    justify-content: space-between;
+  }
+}

@@ -33,3 +33,23 @@
 .crypto-analytics > div:nth-child(4n + 1) {
   background-color: #dd4781;
 }
+
+@media only screen and (max-width: 600px) {
+  .crypto-analytics {
+    font-size: 10px;
+    flex-direction: column;
+  }
+
+  .crypto-analytics > div {
+    width: 95%;
+    padding: 5% 3%;
+  }
+
+  .crypto-analytics > div:nth-child(even) {
+    background-color: #d14378;
+  }
+
+  .crypto-analytics > div:nth-child(odd) {
+    background-color: #dd4781;
+  }
+}

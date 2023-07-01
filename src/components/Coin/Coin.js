@@ -14,12 +14,21 @@ const Coin = ({ coin }) => {
   };
   return (
     <li key={uuid}>
-      <Link to="details" state={uuid}>
+      <Link to={`details?coin=${uuid}`} state={uuid}>
         <div className="coin">
           <span style={style}>
-            <span>{`Name: ${name}(${symbol})`}</span>
-            <span>{`Market Cap: ${Number(marketCap).toLocaleString()}$`}</span>
-            <span>{`Price: ${Number(price).toLocaleString()}$`}</span>
+            <span className="coin-info coin-name">
+              <span>Name:</span>
+              <span>{`${name}(${symbol})`}</span>
+            </span>
+            <span className="coin-info coin-market-cap">
+              <span>Market Cap:</span>
+              <span>{Number(marketCap).toLocaleString()}</span>
+            </span>
+            <span className="coin-info coin-price">
+              <span>Price:</span>
+              <span>{Number(price).toLocaleString()}</span>
+            </span>
           </span>
         </div>
       </Link>
