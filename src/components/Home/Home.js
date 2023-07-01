@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import Stats from '../Stats/Stats';
@@ -17,6 +18,16 @@ const Home = () => {
     cryptos, stats, isLoading, error,
   } = useSelector((state) => state.crypto);
 
+  const [searchCoin, setSearchCoin] = useState('');
+  const coinSearch = cryptos.filter(
+    (el) => {
+      if (searchCoin.length > 0) {
+        return el.name.toLowerCase().includes(searchCoin.toLowerCase());
+      }
+      return el;
+    },
+  );
+
   return (
 
     <div className="content">
@@ -26,7 +37,18 @@ const Home = () => {
             <div>
               <div className="all-stats">ALL STATS</div>
               <Stats stats={stats} />
-              <CoinsList coins={cryptos} />
+              <div className="search-form">
+                <input
+                  className="search-input"
+                  type="search"
+                  name="search"
+                  onChange={(e) => setSearchCoin(e.target.value)}
+                  id="search"
+                  placeholder="search Crypto"
+                  autoComplete="off"
+                />
+              </div>
+              <CoinsList coins={coinSearch} />
             </div>
           )}
     </div>

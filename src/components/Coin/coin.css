@@ -7,3 +7,15 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 600px) {
+  .coin-info {
+    display: flex;
+    gap: 2rem;
+    padding: 1% 2%;
+  }
+
+  .coin-market-cap {
+    display: none;
+  }
+}

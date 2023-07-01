@@ -60,11 +60,43 @@
   padding-top: 5%;
 }
 
+.search-form {
+  display: flex;
+  justify-content: end;
+  padding: 1rem 1rem 0;
+}
+
+.search-input {
+  border: 0;
+  padding: 0.5rem;
+}
+
+input:focus-visible {
+  outline-offset: 0;
+}
+
 @media only screen and (max-width: 600px) {
+  .search-input {
+    padding: 0.2rem;
+  }
+
+  .crypto-list {
+    margin-top: 0;
+  }
+
   .crypto-list li {
     min-width: 90%;
     background-color: #d14378;
     padding: 2% 1%;
+    font-size: 1rem;
+  }
+
+  .crypto-list li:nth-child(odd) {
+    background-color: #d14378;
+  }
+
+  .crypto-list li:nth-child(even) {
+    background-color: #dd4781;
   }
 
   .content ul {
